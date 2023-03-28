@@ -1,0 +1,152 @@
+html{
+    box-sizing: border-box;
+    
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    color: #fff;
+    font-family: 'League Spartan', sans-serif;
+    padding: 0;
+    margin: 0;  
+}
+
+#main-container{
+    width: 375px;
+    height: 100vh;
+    padding: 20px;
+    margin: 0 auto;
+    background-color:#3a4764;
+}
+#top-container{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+#top-container p{
+    margin: 0;
+}
+#title{
+    font-size: 2rem;
+}
+#theme-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+#theme-container #theme-id{
+    margin-top: 21px;
+    font-size: 0.7rem;
+}
+/* Toggle*/
+
+#number-theme-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    font-size: 0.6rem;
+}
+
+#toggle-container{
+    background-color: #232c43;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px;
+}
+label{
+    width:1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="radio"]{
+    appearance: none;
+    margin: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: inset 1em 1em #d03f2f;
+    opacity: 0;
+}
+input[type="radio"]:checked{
+    opacity: 1;
+}
+
+/*******/
+#screen-container{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    background-color: #182034;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+}
+#screen-content{
+    font-size: 2rem;
+    text-align: right;
+}
+
+#buttons-container{
+    padding: 22px;
+    padding-bottom:26px;
+    background-color: #232c43;
+    border-radius: 8px;
+}
+.set-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 13.5px;
+}
+.btn{
+    background-color: #eae3dc;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 0px 0px #b4a597; 
+    border-radius: 5px;
+    flex-basis: 25%;
+    padding-top:5px;/*This padding is to center it vertically*/
+    height: 60px;
+    margin-bottom: 15px;
+    font-size:2rem;
+    font-family: inherit;
+    color:#444b5a;
+}
+.bottom-btn{
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    flex-basis: 50%;
+    height: 60px;
+    font-family: inherit;
+    font-size:1.5rem;
+}
+#del-btn{
+    background-color: #637097;
+    box-shadow: 0px 4px 0px 0px #404e72; 
+    font-size:1.2rem;
+    color: #fff;
+}
+#reset-btn{
+    background-color: #637097;
+    box-shadow: 0px 4px 0px 0px #404e72; 
+    font-size:1.2rem;
+    color: #fff;
+}
+#equal-btn{
+    background-color: #d03f2f;
+    box-shadow: 0px 4px 0px 0px #93261a; 
+    color: #fff;
+}
+
+
